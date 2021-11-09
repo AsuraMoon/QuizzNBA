@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz NBA</title>
+    <link rel="shortcut icon" href="icon.jpg">
+    <link rel="stylesheet" href="styleQuizz.css">
+</head>
+<body>
+    <h1>
+        Quiz <strong>NBA</strong>
+    </h1>
+    <form id="QuizNBA">
+
+        <!--question 1-->
+        <div id="question1">
+            <div class="question">
+                Question 1 : Qui est le plus gros scorrer de 3pts de toute l’histoire de la NBA ?
+            </div>
+            <section class="groupeReponse">                
+                <div class="reponse" class="reponseFausse" >
+                    <input type="radio" name="reponse1" id="r1a" value="a"> 
+                    <label for="r1a">Stephen Curry</label>
+                </div>
+                <div class="reponse" class="reponseJuste">
+                    <input type="radio" name="reponse1" id="r1b" value="b">
+                    <label for="r1b">Ray Allen</label>
+                </div>
+                <div class="reponse" class="reponseFausse">
+                    <input type="radio" name="reponse1" id="r1c" value="c">
+                    <label for="r1c">LeBron James</label>
+                </div>
+                <div class="reponse" class="reponseFausse" >
+                    <input type="radio" name="reponse1" id="r1d" value="d">
+                    <label for="r1d">James Harden</label>
+                </div>
+            </section>
+        </div>
+        <!--fin question 1-->
+        
+        <!--question 2-->
+        <div id="question2">
+            <div class="question">
+                Question 2 : Qui a effectué le saut le plus haut en NBA? (3Mètre81 sur la Planche) 
+            </div>
+            <section class="groupeReponse">
+                <div class="reponse" class="reponseFausse">
+                    <input type="radio" name="reponse2" id="r2a" value="a" > 
+                    <label for="r2a">Shaquille O'Neal</label>
+                </div>
+                <div class="reponse" class="reponseFausse" >
+                    <input type="radio" name="reponse2" id="r2b" value="b">
+                    <label for="r2b">Derrick Rose</label>
+                </div>
+                <div class="reponse" class="reponseFausse" >
+                    <input type="radio" name="reponse2" id="r2c" value="c">
+                    <label for="r2c">LeBron James</label>
+                </div>
+                <div class="reponse" class="reponseJuste" >
+                    <input type="radio" name="reponse2" id="r2d" value="d"> 
+                    <label for="r2d">Dwight Howard</label>
+                </div>                  
+            </section>
+        </div>    
+        <!--fin question 2-->
+    <div id="BUTTON">
+        <button type="submit">
+            Verifiez vos réponses
+        </button>
+    </div>
+    </form>    
+
+    <div id="resultats">
+        <h2 id="intro">T'es sur que t'as gérer ? On va voir ça !</h2><br>
+        <p id="aide"></p><br>
+        <p id="note"></p>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
